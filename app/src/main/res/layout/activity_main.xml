@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:id="@+id/imageView"
-        android:src="@drawable/batman"
+        android:src="@drawable/bebe"
         android:scaleType="centerCrop" />
 
     <TextView
@@ -22,7 +22,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="35dp"
         android:fontFamily="sans-serif-black"
-        android:text=" Batman App"
+        android:text=" restaurants"
         android:textColor="@color/colorTextIcons"
         android:textSize="50sp"
         android:textStyle="bold" />
