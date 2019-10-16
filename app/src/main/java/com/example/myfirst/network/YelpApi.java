@@ -1,4 +1,6 @@
-package com.example.myfirst;
+package com.example.myfirst.network;
+
+import com.example.myfirst.models.YelpBusinessesSearchResponse;
 
 import retrofit2.Call;
 import retrofit2.http.GET;

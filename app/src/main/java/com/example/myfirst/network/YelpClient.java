@@ -1,4 +1,4 @@
-package com.example.myfirst;
+package com.example.myfirst.network;
 
 import java.io.IOException;
 
@@ -10,7 +10,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 import static com.example.myfirst.BuildConfig.YELP_API_KEY;
-import static com.example.myfirst.Constants.YELP_BASE_URL;
+import static com.example.myfirst.ui.Constants.YELP_BASE_URL;
 
 public class YelpClient {
 

@@ -1,10 +1,10 @@
 
 package com.example.myfirst.models;
 
+import java.util.List;
+
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
-
-import java.util.List;
 
 public class Business {
 
@@ -56,13 +56,13 @@ public class Business {
 
     /**
      * No args constructor for use in serialization
-     *
+     * 
      */
     public Business() {
     }
 
     /**
-     *
+     * 
      * @param transactions
      * @param phone
      * @param location

@@ -1,4 +1,4 @@
-package com.example.myfirst;
+package com.example.myfirst.ui;
 
 import android.content.Context;
 import android.widget.ArrayAdapter;

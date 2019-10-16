@@ -1,6 +1,7 @@
 
 package com.example.myfirst.models;
 
+import com.example.myfirst.models.Center;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 

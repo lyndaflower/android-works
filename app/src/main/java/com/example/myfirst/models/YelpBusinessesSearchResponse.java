@@ -1,10 +1,12 @@
 
 package com.example.myfirst.models;
 
+import java.util.List;
+
+import com.example.myfirst.models.Business;
+import com.example.myfirst.models.Region;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
-
-import java.util.List;
 
 public class YelpBusinessesSearchResponse {
 
@@ -20,13 +22,13 @@ public class YelpBusinessesSearchResponse {
 
     /**
      * No args constructor for use in serialization
-     *
+     * 
      */
     public YelpBusinessesSearchResponse() {
     }
 
     /**
-     *
+     * 
      * @param region
      * @param total
      * @param businesses
