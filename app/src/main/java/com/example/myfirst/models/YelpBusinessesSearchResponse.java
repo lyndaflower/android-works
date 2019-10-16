@@ -8,6 +8,9 @@ import com.example.myfirst.models.Region;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
+import org.parceler.Parcel;
+
+
 public class YelpBusinessesSearchResponse {
 
     @SerializedName("total")

@@ -34,8 +34,8 @@
         android:background="@color/colorTextIcons"
         android:layout_above="@+id/findButton"
         android:layout_marginBottom="10dp"
-        android:padding="5dp"
-        android:hint="Enter Zip Code"
+        android:padding="10dp"
+        android:hint="Enter any city  "
         android:layout_centerHorizontal="true" />
 
     <Button
@@ -47,7 +47,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginStart="0dp"
         android:background="@color/colorAccent"
-        android:text="Create challenger"
+        android:text="Find restaurant"
         android:textColor="@color/colorTextIcons" />
 
 

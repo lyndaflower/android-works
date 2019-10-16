@@ -6,11 +6,14 @@ import java.util.List;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
+import org.parceler.Parcel;
+
+@Parcel
 public class Business {
 
     @SerializedName("rating")
     @Expose
-    private Double rating;
+    private double rating;
     @SerializedName("price")
     @Expose
     private String price;
@@ -56,13 +59,13 @@ public class Business {
 
     /**
      * No args constructor for use in serialization
-     * 
+     *
      */
     public Business() {
     }
 
     /**
-     * 
+     *
      * @param transactions
      * @param phone
      * @param location
@@ -79,7 +82,7 @@ public class Business {
      * @param isClosed
      * @param coordinates
      */
-    public Business(Double rating, String price, String phone, String id, String alias, Boolean isClosed, List<Category> categories, Integer reviewCount, String name, String url, Coordinates coordinates, String imageUrl, Location location, Double distance, List<String> transactions) {
+    public Business(double rating, String price, String phone, String id, String alias, Boolean isClosed, List<Category> categories, Integer reviewCount, String name, String url, Coordinates coordinates, String imageUrl, Location location, Double distance, List<String> transactions) {
         super();
         this.rating = rating;
         this.price = price;
@@ -98,7 +101,7 @@ public class Business {
         this.transactions = transactions;
     }
 
-    public Double getRating() {
+    public double getRating() {
         return rating;
     }
 

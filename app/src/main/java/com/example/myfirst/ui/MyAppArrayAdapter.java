@@ -3,6 +3,9 @@ package com.example.myfirst.ui;
 import android.content.Context;
 import android.widget.ArrayAdapter;
 
+import com.example.myfirst.models.Business;
+import com.squareup.picasso.Picasso;
+
 public class MyAppArrayAdapter extends ArrayAdapter {
     private Context mContext;
     private String[] mRestaurants;
@@ -27,5 +30,7 @@ public class MyAppArrayAdapter extends ArrayAdapter {
     public int getCount(){
         return  mRestaurants.length;
     }
+
+
 }
 

@@ -4,11 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -17,7 +14,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.myfirst.R;
 import com.example.myfirst.adapters.RestaurantListAdapter;
 import com.example.myfirst.models.Business;
-import com.example.myfirst.models.Category;
 import com.example.myfirst.models.YelpBusinessesSearchResponse;
 import com.example.myfirst.network.YelpApi;
 import com.example.myfirst.network.YelpClient;
@@ -30,8 +26,8 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class AppActivity extends AppCompatActivity {
-    public static final String TAG = AppActivity.class.getSimpleName();
+public class RestaurantListActivity extends AppCompatActivity {
+    public static final String TAG = RestaurantListActivity.class.getSimpleName();
 
     @BindView(R.id.recyclerView) RecyclerView mRecyclerView;
     @BindView(R.id.errorTextView) TextView mErrorTextView ;
@@ -61,7 +57,7 @@ public class AppActivity extends AppCompatActivity {
 //            @Override
 //            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 //                String restaurant = ((TextView) view).getText().toString();
-//                Toast.makeText(AppActivity.this, restaurant, Toast.LENGTH_LONG).show();
+//                Toast.makeText(RestaurantListActivity.this, restaurant, Toast.LENGTH_LONG).show();
 //            }
 //        });
 
@@ -81,10 +77,10 @@ public class AppActivity extends AppCompatActivity {
 
                 if (response.isSuccessful()) {
                     restaurants = response.body().getBusinesses();
-                    mAdapter = new RestaurantListAdapter(AppActivity.this, restaurants);
+                    mAdapter = new RestaurantListAdapter(RestaurantListActivity.this, restaurants);
                     mRecyclerView.setAdapter(mAdapter);
                     RecyclerView.LayoutManager layoutManager =
-                            new LinearLayoutManager(AppActivity.this);
+                            new LinearLayoutManager(RestaurantListActivity.this);
                     mRecyclerView.setLayoutManager(layoutManager);
                     mRecyclerView.setHasFixedSize(true);
 
